@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Navbar.css';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <a href="#home" className="logo">
-          <img src="/logo.png" alt="Fitness Sports Center Logo" className="logo-img" />
+          <img src={logo} alt="Fitness Sports Center Logo" className="logo-img" />
           <div className="logo-text-group">
             <span className="logo-text-primary text-gold">FITNESS</span>
             <span className="logo-text-secondary">SPORTS CENTER</span>

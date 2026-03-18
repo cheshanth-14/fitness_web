@@ -2,31 +2,35 @@ import React from 'react';
 import { Instagram, Facebook } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Trainers.css';
+import t1 from '../assets/t1.jpg';
+import t2 from '../assets/t2.jpg';
+import t3 from '../assets/t3.jpg';
+import t4 from '../assets/t4.jpg';
 
 const trainersData = [
   {
     name: "Alex Kane",
     specialty: "Strength & Powerlifting",
     bio: "Former national-level powerlifter, 8 years coaching",
-    image: "/t1.jpg"
+    image: t1
   },
   {
     name: "Sara Reed",
     specialty: "HIIT & Conditioning",
     bio: "NASM-certified, specialist in fat loss and performance",
-    image: "/t2.jpg"
+    image: t2
   },
   {
     name: "Mike Jax",
     specialty: "Boxing & Combat Sports",
     bio: "Pro MMA background, trains all skill levels",
-    image: "/t3.jpg"
+    image: t3
   },
   {
     name: "Lena Park",
     specialty: "Mobility & Recovery",
     bio: "Certified yoga instructor and physical therapist",
-    image: "/t4.jpg"
+    image: t4
   }
 ];
 
