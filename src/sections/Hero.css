@@ -1,0 +1,172 @@
+.hero-content-left {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 5vh;
+  margin-right: auto;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('../assets/gym6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 80px 40px 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Stronger gradient from left to ensure text readability without hiding the subject on the right */
+  background: linear-gradient(to right, rgba(8, 8, 8, 0.9) 0%, rgba(8, 8, 8, 0.4) 50%, rgba(8, 8, 8, 0.1) 100%);
+  z-index: 1;
+}
+
+.hero-overline {
+  color: var(--primary-gold);
+  font-family: var(--font-accent);
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.hero-headline {
+  font-size: clamp(60px, 12vw, 120px);
+  line-height: 0.85;
+  letter-spacing: -2px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.hero-subtext-left {
+  color: var(--text-white);
+  font-size: 18px;
+  max-width: 500px;
+  /* Slightly narrower to stay on the left */
+  line-height: 1.6;
+  margin-bottom: 48px;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.hero-actions-left {
+  display: flex;
+  gap: 24px;
+}
+
+.btn-hero {
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-bottom-stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(18, 15, 8, 0.95);
+  border-top: 1px solid rgba(204, 153, 0, 0.3);
+  border-bottom: 1px solid rgba(204, 153, 0, 0.3);
+  z-index: 2;
+  padding: 15px 0;
+  backdrop-filter: blur(10px);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.stat-num {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  color: var(--primary-gold);
+  line-height: 1;
+}
+
+.stat-txt {
+  font-family: var(--font-accent);
+  font-size: 11px;
+  color: var(--text-white);
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.stat-divider-vertical {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(204, 153, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .hero-headline {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-bottom-stats {
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .stats-container {
+    flex-wrap: wrap;
+    gap: 15px 30px;
+  }
+
+  .stat-col {
+    min-width: 120px;
+    flex: 1;
+  }
+
+  .stat-divider-vertical {
+    display: none;
+  }
+
+  .stat-num {
+    font-size: 28px;
+  }
+
+  .hero-actions-centered {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-headline {
+    font-size: 60px;
+  }
+
+  .hero-content-centered {
+    padding-bottom: 20vh;
+  }
+}
