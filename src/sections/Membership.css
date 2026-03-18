@@ -1,6 +1,6 @@
 .membership-section {
   background-color: var(--bg-black);
-  padding: 150px 0;
+  padding: 50px 0 150px;
   position: relative;
 }
 
@@ -81,8 +81,9 @@
 }
 
 .plan-card {
-  background-color: var(--bg-brown);
-  padding: 60px 48px;
+  min-height: 700px;
+  padding: 48px;
+  background: linear-gradient(145deg, #151515 0%, #080808 100%);
   border: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
   transition: var(--transition-smooth);
@@ -92,8 +93,13 @@
 
 .plan-card.featured {
   border: 1px solid var(--primary-gold);
-  background-color: rgba(30, 26, 14, 0.8);
-  box-shadow: 0 0 30px rgba(204, 153, 0, 0.1);
+  background: linear-gradient(145deg, #1E1A0E 0%, #080808 100%);
+  box-shadow: 0 0 50px rgba(204, 153, 0, 0.15);
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-gold);
 }
 
 .featured-badge {
@@ -110,7 +116,7 @@
 }
 
 .plan-header {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .plan-name {
@@ -132,7 +138,7 @@
 }
 
 .price-value {
-  font-size: 72px;
+  font-size: 60px;
   font-family: var(--font-heading);
   line-height: 1;
 }
@@ -148,10 +154,10 @@
 }
 
 .plan-features {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .feature-row {
@@ -166,6 +172,7 @@
   width: 100%;
   padding: 18px;
   font-size: 14px;
+  margin-top: auto;
   margin-bottom: 24px;
 }
 

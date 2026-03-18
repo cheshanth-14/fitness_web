@@ -1,6 +1,6 @@
 .services-section {
   background-color: var(--bg-brown);
-  padding: 80px 0 150px;
+  padding: 70px 0 30px;
   position: relative;
 }
 
@@ -19,7 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 15%; /* Shifting content to the left */
+  padding-right: 15%;
+  /* Shifting content to the left */
 }
 
 .divider-tag {
@@ -47,7 +48,7 @@
     align-items: flex-start;
     gap: 20px;
   }
-  
+
   .header-tagline {
     text-align: left;
     max-width: 600px;
@@ -232,24 +233,24 @@
   .services-section {
     padding: 100px 0;
   }
-  
+
   .services-grid {
     grid-template-columns: 100%;
     margin-bottom: 60px;
   }
-  
+
   .service-card {
     height: 400px;
   }
-  
+
   .service-card-content {
     padding: 30px;
   }
-  
+
   .service-title {
     font-size: 32px;
   }
-  
+
   .services-cta {
     padding: 40px 20px;
   }
