@@ -163,7 +163,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="How can we help you?"
-                  rows="5"
+                  rows="8"
                   className={errors.message ? 'error' : ''}
                 ></textarea>
                 <div className="char-count">{formData.message.length}/500</div>

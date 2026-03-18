@@ -8,7 +8,7 @@
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 80px;
   align-items: center;
 }
 
@@ -96,7 +96,7 @@
 /* Right: Form Card */
 .contact-form-card {
   background-color: var(--bg-brown);
-  padding: 60px;
+  padding: 40px 15px;
   border: 1px solid rgba(204, 153, 0, 0.2);
   position: relative;
 }
@@ -150,13 +150,20 @@
 }
 
 .input-group input, .input-group textarea {
+  width: 100%;
+  box-sizing: border-box;
   background-color: rgba(8, 8, 8, 0.5);
   border: 1px solid rgba(204, 153, 0, 0.1);
-  padding: 14px;
+  padding: 20px;
   color: var(--text-white);
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 16px;
   transition: var(--transition-smooth);
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 200px;
 }
 
 .input-group input:focus, .input-group textarea:focus {
