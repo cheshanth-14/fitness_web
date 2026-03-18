@@ -33,7 +33,7 @@
 }
 
 .logo-img {
-  height: 40px;
+  height: 55px;
   width: auto;
   object-fit: contain;
 }
@@ -46,14 +46,14 @@
 
 .logo-text-primary {
   font-family: var(--font-heading);
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 26px;
+  letter-spacing: 1.5px;
 }
 
 .logo-text-secondary {
   font-family: var(--font-accent);
-  font-size: 10px;
-  letter-spacing: 1px;
+  font-size: 13px;
+  letter-spacing: 2px;
   color: var(--text-white);
 }
 

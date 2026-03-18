@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Facebook, Twitter, Send, ArrowRight } from 'lucide-react';
 import './Footer.css';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ const Footer = () => {
         {/* Column 1: Logo & Tagline */}
         <div className="footer-col brand-col">
           <a href="#home" className="logo">
-            <img src="/logo.png" alt="Logo" className="logo-img" />
+            <img src={logo} alt="Logo" className="logo-img" />
             <span className="logo-text">FITNESS <span className="text-gold">SPORTS CENTER</span></span>
           </a>
           <p className="footer-tagline">WHERE CHAMPIONS ARE BUILT</p>
