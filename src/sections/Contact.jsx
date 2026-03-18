@@ -25,8 +25,8 @@ const Contact = () => {
     if (!emailRegex.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
-    if (!formData.message.trim() || formData.message.length < 10) {
-      newErrors.message = "Message must be at least 10 characters";
+    if (!formData.message.trim() || formData.message.length < 2) {
+      newErrors.message = "Message is required";
     }
     return newErrors;
   };

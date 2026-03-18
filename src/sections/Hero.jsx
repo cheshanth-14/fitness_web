@@ -96,8 +96,8 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          <button className="btn-solid btn-hero">START YOUR JOURNEY</button>
-          <button className="btn-outline btn-hero">EXPLORE FACILITY</button>
+          <a href="#about" className="btn-solid btn-hero">START YOUR JOURNEY</a>
+          <a href="#services" className="btn-outline btn-hero">EXPLORE FACILITY</a>
         </motion.div>
       </div>
 

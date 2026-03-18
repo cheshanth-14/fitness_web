@@ -169,7 +169,20 @@
 .input-group input:focus, .input-group textarea:focus {
   outline: none;
   border-color: var(--primary-gold);
-  background-color: rgba(204, 153, 0, 0.05);
+  background-color: rgba(204, 153, 0, 0.08); /* Slightly more prominent gold tint */
+  color: var(--text-white);
+}
+
+/* Chrome/Safari Autofill Fix */
+.input-group input:-webkit-autofill,
+.input-group input:-webkit-autofill:hover, 
+.input-group input:-webkit-autofill:focus,
+.input-group textarea:-webkit-autofill,
+.input-group textarea:-webkit-autofill:hover,
+.input-group textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text-white);
+  -webkit-box-shadow: 0 0 0px 1000px #121212 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .input-group input.error, .input-group textarea.error {
