@@ -46,9 +46,10 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="btn-solid join-btn">
+          
+          <a href="#membership" className="btn-solid join-btn">
             JOIN NOW
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -75,12 +76,9 @@ const Navbar = () => {
           ))}
         </div>
         <div className="mobile-ctas">
-          <button className="btn-outline full-width">
-            FREE TRIAL
-          </button>
-          <button className="btn-solid full-width">
+          <a href="#membership" className="btn-solid full-width" onClick={() => setIsOpen(false)}>
             JOIN NOW
-          </button>
+          </a>
         </div>
       </div>
     </nav>

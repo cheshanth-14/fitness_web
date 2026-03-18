@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Dumbbell, Zap, Flower, Shield, Timer, Apple, ArrowRight } from 'lucide-react';
+import { Dumbbell, Zap, Flower, Shield, Timer, Apple } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Services.css';
 
 // Import assets for backgrounds
 import gym1 from '../assets/gym1.avif';
-import gym4 from '../assets/gym4.avif';
 import gym7 from '../assets/gym7.avif';
 import gym5 from '../assets/gym5.avif';
 import env2 from '../assets/env2.avif';
