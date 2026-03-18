@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './Services.css';
 
 // Import assets for backgrounds
-import gym3 from '../assets/gym3.avif';
+import gym1 from '../assets/gym1.avif';
 import gym4 from '../assets/gym4.avif';
-import env1 from '../assets/env1.webp';
+import gym7 from '../assets/gym7.avif';
 import gym5 from '../assets/gym5.avif';
 import env2 from '../assets/env2.avif';
 import env4 from '../assets/env4.avif';
@@ -19,7 +19,7 @@ const servicesData = [
     category: "STRENGTH",
     description: "Build raw power and muscle with our professional-grade strength equipment and coaching.",
     icon: Dumbbell,
-    image: gym3,
+    image: gym5,
     filter: "Strength"
   },
   {
@@ -29,8 +29,7 @@ const servicesData = [
     description: "High-intensity metabolic conditioning designed to burn fat and boost your cardiovascular engine.",
     icon: Zap,
     image: athlete,
-    filter: "Cardio",
-    featured: true
+    filter: "Cardio"
   },
   {
     id: 3,
@@ -38,7 +37,7 @@ const servicesData = [
     category: "RECOVERY",
     description: "Enhance your flexibility, balance, and recovery through guided mobility and yoga sessions.",
     icon: Flower,
-    image: env1,
+    image: gym7,
     filter: "Recovery"
   },
   {
@@ -47,7 +46,7 @@ const servicesData = [
     category: "COMBAT",
     description: "Master the art of combat sports with our pro-level boxing and MMA training programs.",
     icon: Shield,
-    image: gym5,
+    image: gym1,
     filter: "Combat"
   },
   {
@@ -74,8 +73,8 @@ const Services = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const filters = ["All", "Strength", "Cardio", "Combat", "Recovery", "Nutrition"];
 
-  const filteredServices = activeFilter === "All" 
-    ? servicesData 
+  const filteredServices = activeFilter === "All"
+    ? servicesData
     : servicesData.filter(s => s.filter === activeFilter);
 
   return (
@@ -91,7 +90,7 @@ const Services = () => {
         {/* Filter Tabs */}
         <div className="filter-container">
           {filters.map(filter => (
-            <button 
+            <button
               key={filter}
               className={`filter-tab ${activeFilter === filter ? 'active' : ''}`}
               onClick={() => setActiveFilter(filter)}
@@ -102,13 +101,13 @@ const Services = () => {
         </div>
 
         {/* Grid */}
-        <motion.div 
+        <motion.div
           layout
           className="services-grid"
         >
           <AnimatePresence mode='popLayout'>
             {filteredServices.map((service, index) => (
-              <motion.div 
+              <motion.div
                 key={service.id}
                 layout
                 initial={{ opacity: 0, y: 20 }}
@@ -116,8 +115,8 @@ const Services = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className={`service-card ${service.featured ? 'featured' : ''}`}
-                style={{ 
-                  backgroundImage: `linear-gradient(to top, rgba(8, 8, 8, 1) 10%, rgba(8, 8, 8, 0.6) 50%, rgba(8, 8, 8, 0.2) 100%), url(${service.image})` 
+                style={{
+                  backgroundImage: `linear-gradient(to top, rgba(8, 8, 8, 1) 10%, rgba(8, 8, 8, 0.6) 50%, rgba(8, 8, 8, 0.2) 100%), url(${service.image})`
                 }}
               >
                 <div className="service-card-content">
@@ -134,7 +133,7 @@ const Services = () => {
         </motion.div>
 
         {/* CTA Banner */}
-        <motion.div 
+        <motion.div
           className="services-cta"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
