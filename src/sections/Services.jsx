@@ -85,6 +85,14 @@ const Services = () => {
             <p className="section-overline">WHAT WE OFFER</p>
             <h2 className="section-heading">OUR SERVICES</h2>
           </div>
+          <div className="header-divider">
+            <span className="divider-tag">POWER · PERFORMANCE · RESULTS</span>
+          </div>
+          <div className="header-right">
+            <p className="header-tagline">
+              PUSH YOUR <span className="text-gold">PHYSICAL LIMITS</span> WITH OUR SPECIALIZED TRAINING PROGRAMS DESIGNED FOR <span className="text-gold">PEAK PERFORMANCE</span>.
+            </p>
+          </div>
         </div>
 
         {/* Filter Tabs */}
