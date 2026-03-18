@@ -149,7 +149,7 @@
 .services-cta {
   background-color: var(--bg-black);
   border: 1px solid var(--primary-gold);
-  padding: 80px;
+  padding: 40px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
