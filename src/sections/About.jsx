@@ -30,7 +30,8 @@ const About = () => {
             <img src={aboutImg} alt="Our facility" className="about-image" />
             <div className="bracket-bottom"></div>
 
-            <div className="est-badge">
+            <div className="est-tag">
+              <span className="est-line"></span>
               <span className="est-text">EST. 2023</span>
             </div>
           </div>

@@ -52,36 +52,32 @@
   border-right: 3px solid var(--primary-gold);
 }
 
-.est-badge {
+.est-tag {
   position: absolute;
-  bottom: 20px;
-  right: -40px;
-  width: 100px;
-  height: 100px;
-  background-color: var(--primary-gold);
-  border-radius: 50%;
+  top: 40px;
+  right: -30px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
-  animation: rotateSlow 20s linear infinite;
+  gap: 12px;
+  z-index: 3;
 }
 
-@keyframes rotateSlow {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.est-line {
+  width: 2px;
+  height: 80px;
+  background-color: var(--primary-gold);
 }
 
 .est-text {
-  font-family: var(--font-heading);
-  font-size: 16px;
-  color: black;
-  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: var(--primary-gold);
+  transform: rotate(180deg);
 }
 
 /* Right Content */

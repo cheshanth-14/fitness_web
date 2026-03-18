@@ -88,11 +88,6 @@ const Services = () => {
           <div className="header-divider">
             <span className="divider-tag">POWER · PERFORMANCE · RESULTS</span>
           </div>
-          <div className="header-right">
-            <p className="header-tagline">
-              PUSH YOUR <span className="text-gold">PHYSICAL LIMITS</span> WITH OUR SPECIALIZED TRAINING PROGRAMS DESIGNED FOR <span className="text-gold">PEAK PERFORMANCE</span>.
-            </p>
-          </div>
         </div>
 
         {/* Filter Tabs */}
@@ -148,9 +143,9 @@ const Services = () => {
           viewport={{ once: true }}
         >
           <h2 className="cta-text">READY TO <span className="text-gold">PUSH YOUR LIMITS?</span></h2>
-          <button className="btn-solid btn-large">
+          <a href="#membership" className="btn-solid btn-large">
             JOIN THE ELITE
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
