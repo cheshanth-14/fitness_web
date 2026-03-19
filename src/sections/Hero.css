@@ -2,14 +2,20 @@
   position: relative;
   z-index: 2;
   text-align: left;
-  max-width: 100% !important;
-  margin-left: 20% !important;
-  margin-right: auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  padding-bottom: 15vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 20vh;
-  padding-left: 0;
+}
+
+@media (min-width: 1025px) {
+  .hero-content-left {
+    padding-left: 10%; /* Subtle offset for larger screens */
+  }
 }
 
 .hero-section {
@@ -23,7 +29,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 80px 10px 0;
+  padding: 80px 0 0;
 }
 
 .hero-overlay {
@@ -32,7 +38,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* Stronger gradient from left to ensure text readability without hiding the subject on the right */
   background: linear-gradient(to right, rgba(8, 8, 8, 0.9) 0%, rgba(8, 8, 8, 0.4) 50%, rgba(8, 8, 8, 0.1) 100%);
   z-index: 1;
 }
@@ -40,39 +45,38 @@
 .hero-overline {
   color: var(--primary-gold);
   font-family: var(--font-accent);
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 3px;
   margin-bottom: 24px;
 }
 
 .hero-headline {
-  font-size: clamp(60px, 12vw, 120px);
-  line-height: 0.85;
+  font-size: clamp(48px, 10vw, 120px);
+  line-height: 0.9;
   letter-spacing: -2px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-weight: 700;
 }
 
 .hero-subtext-left {
   color: var(--text-white);
   font-size: 18px;
-  max-width: 500px;
-  /* Slightly narrower to stay on the left */
+  max-width: 550px;
   line-height: 1.6;
   margin-bottom: 48px;
   opacity: 0.9;
-  text-align: left;
 }
 
 .hero-actions-left {
   display: flex;
-  gap: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn-hero {
-  padding: 16px 40px;
+  padding: 18px 40px;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -84,10 +88,9 @@
   left: 0;
   width: 100%;
   background-color: rgba(18, 15, 8, 0.95);
-  border-top: 1px solid rgba(204, 153, 0, 0.6);
-  border-bottom: 1px solid rgba(204, 153, 0, 0.6);
+  border-top: 1px solid rgba(204, 153, 0, 0.4);
   z-index: 2;
-  padding: 15px 0;
+  padding: 20px 0;
   backdrop-filter: blur(10px);
 }
 
@@ -95,6 +98,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 
 .stat-col {
@@ -102,19 +106,19 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  flex: 1;
+  text-align: center;
 }
 
 .stat-num {
   font-family: var(--font-heading);
-  font-size: 36px;
+  font-size: 32px;
   color: var(--primary-gold);
   line-height: 1;
 }
 
 .stat-txt {
   font-family: var(--font-accent);
-  font-size: 11px;
+  font-size: 10px;
   color: var(--text-white);
   letter-spacing: 1px;
   opacity: 0.7;
@@ -122,32 +126,61 @@
 
 .stat-divider-vertical {
   width: 1px;
-  height: 40px;
-  background-color: rgba(204, 153, 0, 0.2);
+  height: 30px;
+  background-color: rgba(204, 153, 0, 0.15);
 }
 
 @media (max-width: 1024px) {
-  .hero-headline {
-    font-size: 80px;
+  .hero-content-left {
+    padding: 0 40px 15vh;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-bottom-stats {
-    padding: 15px 0;
-    bottom: 0;
+  .hero-section {
+    padding-top: 100px;
+    background-position: 70% center; /* Show more of the athlete on mobile */
+  }
+
+  .hero-overlay {
+    background: linear-gradient(to top, rgba(8, 8, 8, 0.9) 0%, rgba(8, 8, 8, 0.6) 100%);
+  }
+
+  .hero-content-left {
+    text-align: center;
+    align-items: center;
+    padding: 0 20px 25vh;
+  }
+
+  .hero-headline {
+    font-size: clamp(42px, 12vw, 60px);
+    gap: 5px;
+  }
+
+  .hero-subtext-left {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .hero-actions-left {
+    justify-content: center;
     width: 100%;
-    border-radius: 0;
+    gap: 15px;
+  }
+
+  .btn-hero {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-bottom-stats {
+    padding: 20px 0;
   }
 
   .stats-container {
-    flex-wrap: wrap;
-    gap: 15px 30px;
-  }
-
-  .stat-col {
-    min-width: 120px;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
   .stat-divider-vertical {
@@ -155,20 +188,16 @@
   }
 
   .stat-num {
-    font-size: 28px;
+    font-size: 24px;
   }
+}
 
-  .hero-actions-centered {
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-  }
-
+@media (max-width: 480px) {
   .hero-headline {
-    font-size: 60px;
+    font-size: 40px;
   }
-
-  .hero-content-centered {
-    padding-bottom: 20vh;
+  
+  .stats-container {
+    gap: 15px;
   }
 }
