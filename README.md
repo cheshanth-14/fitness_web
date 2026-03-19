@@ -3,8 +3,8 @@
 A premium, responsive single-page gym website built for **FITNESS SPORTS CENTER** (Est. 2023, Colombo, Sri Lanka). This project features a dark luxury athletic aesthetic, smooth interactions, and a fully functional frontend with advanced capabilities.
 
 ## 🔗 Live Link
-- **Live Demo:** [https://fitness-sportsweb.vercel.app/](https://fitness-sportsweb.vercel.app/)
-- **Repository:** [https://github.com/cheshanth-14/fitness_web.git](https://github.com/cheshanth-14/fitness_web.git)
+- **Live Demo:** [View Live Site](https://fitness-sportsweb.vercel.app/)
+- **Repository:** [View Source Code](https://github.com/cheshanth-14/fitness_web.git)
 
 ## 🛠 Tech Stack
 - **Frontend Framework:** React 19
@@ -61,7 +61,9 @@ A premium, responsive single-page gym website built for **FITNESS SPORTS CENTER*
 - `/src/index.css` - Global CSS tokens, resets, and utility classes
 
 ---
+## 📞 Contact Information
+- **Author:** Cheshanth
+- **Phone:** 0764545454
+- **Email:** cheshanth14@gmail.com
+
 *Developed to demonstrate an elite, modern frontend web presence.*
-author - Cheshanth
-phone - 0764545454
-email - [cheshanth14@gmail.com]
