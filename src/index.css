@@ -7,12 +7,42 @@
   --bg-gray: #2E2E2E;
   --text-white: #F0EEE6;
   --text-muted: #A0A0A0;
+  --nav-bg: rgba(8, 8, 8, 0.9);
   
-  --font-heading: 'Bebas Neue', cursiv;
+  --card-grad-dark: #151515;
+  --card-grad-darker: #080808;
+  --card-grad-feat: #1E1A0E;
+  --overlay-dark-1: rgba(8, 8, 8, 1);
+  --overlay-dark-09: rgba(8, 8, 8, 0.9);
+  --overlay-dark-08: rgba(8, 8, 8, 0.8);
+  --overlay-dark-06: rgba(8, 8, 8, 0.6);
+  --overlay-dark-04: rgba(8, 8, 8, 0.4);
+  --overlay-dark-02: rgba(8, 8, 8, 0.2);
+  
+  --font-heading: 'Bebas Neue', cursive;
   --font-body: 'Barlow', sans-serif;
   --font-accent: 'Barlow Condensed', sans-serif;
 
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-theme="light"] {
+  --bg-black: #FFFFFF;
+  --bg-brown: #F5F5F5;
+  --bg-gray: #E0E0E0;
+  --text-white: #000000;
+  --text-muted: #111111;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+
+  --card-grad-dark: #FAFAFA;
+  --card-grad-darker: #E5E5E5;
+  --card-grad-feat: #FFF9E6;
+  --overlay-dark-1: rgba(255, 255, 255, 0.25);
+  --overlay-dark-09: rgba(255, 255, 255, 0.2);
+  --overlay-dark-08: rgba(255, 255, 255, 0.15);
+  --overlay-dark-06: rgba(255, 255, 255, 0.1);
+  --overlay-dark-04: rgba(255, 255, 255, 0.05);
+  --overlay-dark-02: rgba(255, 255, 255, 0);
 }
 
 * {

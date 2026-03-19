@@ -118,7 +118,7 @@ const Services = () => {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className={`service-card ${service.featured ? 'featured' : ''}`}
                 style={{
-                  backgroundImage: `linear-gradient(to top, rgba(8, 8, 8, 1) 10%, rgba(8, 8, 8, 0.6) 50%, rgba(8, 8, 8, 0.2) 100%), url(${service.image})`
+                  backgroundImage: `linear-gradient(to top, var(--overlay-dark-1) 10%, var(--overlay-dark-06) 50%, var(--overlay-dark-02) 100%), url(${service.image})`
                 }}
               >
                 <div className="service-card-content">
