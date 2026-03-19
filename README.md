@@ -1,53 +1,67 @@
-# Fitness Sports Center Website
+# Fitness Sports Center
 
-A premium, responsive single-page gym website project built for the **FITNESS SPORTS CENTER** (Est. 2023, Colombo, Sri Lanka). This project features a dark luxury athletic aesthetic, smooth animations, and a fully functional contact form.
+A premium, responsive single-page gym website built for **FITNESS SPORTS CENTER** (Est. 2023, Colombo, Sri Lanka). This project features a dark luxury athletic aesthetic, smooth interactions, and a fully functional frontend with advanced capabilities.
 
-## Tech Stack
-- **Frontend**: React + Vite
-- **Styling**: Vanilla CSS (PostCSS)
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Design Inspiration**: Dark Luxury, High-end Editorial
+## 🔗 Live Link
+- **Live Demo:** [https://fitness-sportsweb.vercel.app/](https://fitness-sportsweb.vercel.app/)
+- **Repository:** [https://github.com/cheshanth-14/fitness_web.git](https://github.com/cheshanth-14/fitness_web.git)
 
-## Key Features
-- **Responsive Navigation**: Sticky navbar with mobile hamburger menu.
-- **Hero Section**: Staggered text animations and animated stats counters.
-- **About Section**: Professional imagery with decorative frames and feature checklist.
-- **Services Section**: Filterable service grid (Strength, Cardio, etc.) with a featured HIIT card.
-- **Membership Plans**: Tiered pricing cards with a Monthly/Yearly toggle.
-- **Trainers Section**: Meet our expert coaches with specialized tags and hover effects.
-- **Contact Form**: Real-time validation, character counter, loading states, and success feedback.
-- **Newsletter**: Subscription section in the footer.
+## 🛠 Tech Stack
+- **Frontend Framework:** React 19
+- **Build Tool:** Vite
+- **Styling:** Vanilla CSS (CSS Variables, Flexbox/Grid, Responsive Design)
+- **Animations:** Framer Motion (Scroll reveal, layout animations, number counters)
+- **Icons:** Lucide React
+- **Design Aesthetic:** Dark Theme Luxury, High-end Editorial
 
-## Setup Instructions
+## ✨ Key Features & Bonus Implementations
+- **Dark Mode Aesthetic:** Implemented a deep dark theme (`#080808`) with gold accents for a premium workout vibe.
+- **Search / Filter Functionality:** Dynamic category filtering in the Services section with smooth Framer Motion layout transitions.
+- **Advanced Animations:**
+  - Animated stat counters in the Hero section
+  - Staggered entry animations for text and cards
+  - Smooth scroll behavior and sticky responsive navigation
+- **Advanced Form Handling:**
+  - Real-time client-side validation (Email Regex, length limits)
+  - Character counters
+  - Loading spin state during submission
+  - Success banner with simulated API integration delay
+- **Responsive Layout:** Fully optimized for mobile, tablet, and desktop viewports with a custom durable mobile menu.
+- **Pricing Toggle:** Interactive Monthly/Yearly subscription toggle in Membership section.
 
-1.  **Clone the repository**:
-    ```bash
-    git clone [repository-url]
-    cd fitness-sports-center
-    ```
+## 🚀 Setup Instructions
 
-2.  **Install dependencies**:
-    ```bash
-    npm install
-    ```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/cheshanth-14/fitness_web.git
+   cd fitness_web
+   ```
 
-3.  **Run locally**:
-    ```bash
-    npm run dev
-    ```
-    The site will be available at `http://localhost:5173/`.
+2. **Install dependencies:**
+   Make sure you have Node.js installed. Then run:
+   ```bash
+   npm install
+   ```
 
-4.  **Build for production**:
-    ```bash
-    npm run build
-    ```
+3. **Run the development server locally:**
+   ```bash
+   npm run dev
+   ```
+   The site will be available at `http://localhost:5173/`.
 
-## Project Structure
-- `/src/components`: Reusable UI components (Navbar, Footer).
-- `/src/sections`: Main page sections (Hero, About, Services, Membership, Trainers, Contact).
-- `/src/assets`: Images and local icons.
-- `/src/styles`: Global CSS variables and design tokens.
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📁 Project Structure
+- `/src/components` - Reusable UI elements (Navbar, Footer, ScrollToTop)
+- `/src/sections` - Main page content (Hero, About, Services, Membership, Trainers, Contact)
+- `/src/assets` - Images and local branding assets
+- `/src/index.css` - Global CSS tokens, resets, and utility classes
 
 ---
-*Created as part of a Web Development Internship project.*
+*Developed to demonstrate an elite, modern frontend web presence.*
+author - Cheshanth
+phone - 0764545454
+email - [cheshanth14@gmail.com]
