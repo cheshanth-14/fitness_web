@@ -21,10 +21,20 @@ const Contact = () => {
     if (!formData.name.trim() || formData.name.length < 2) {
       newErrors.name = "Name must be at least 2 characters";
     }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!emailRegex.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
+
+    const phoneRegex = /^[\d\s\+\-\(\)]{9,20}$/;
+    if (!formData.phone) {
+      newErrors.phone = "Phone number is required";
+    } else if (!phoneRegex.test(formData.phone)) {
+      newErrors.phone = "Please enter a valid phone number";
+    }
+
     if (!formData.message.trim() || formData.message.length < 2) {
       newErrors.message = "Message is required";
     }
@@ -134,14 +144,16 @@ const Contact = () => {
 
             <div className="form-row">
               <div className="input-group">
-                <label>Phone Number</label>
+                <label>Phone Number *</label>
                 <input 
                   type="tel" 
                   name="phone" 
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="+94 77 XXX XXXX"
+                  className={errors.phone ? 'error' : ''}
                 />
+                {errors.phone && <span className="error-msg">{errors.phone}</span>}
               </div>
               <div className="input-group">
                 <label>Subject</label>
