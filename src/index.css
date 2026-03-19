@@ -124,6 +124,7 @@ img {
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   transition: var(--transition-smooth);
 }
@@ -144,6 +145,7 @@ img {
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   transition: var(--transition-smooth);
 }
